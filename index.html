@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/laptop.css">
+    <link rel="stylesheet" href="./css/font.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Assignment 03</title>
+  </head>
+  <body>
+    <!--Tạo banner-->
+    <section>
+    <div id="banner">
+      <div class="img-banner1">
+        <img src="images/banner.jpg" alt="anh_nen" class="img-banner"/>
+      </div>
+      <div class="text-banner">
+        <h1>Trần Văn Anh</h1>
+       <p style="margin-top: -20px;">Lập trình viên Full Stack Developer</p>
+      </div>
+    </div>
+    </section>
+    <!--Tạo nav -->
+    <section id="nav-bar">
+      <nav class="container">
+        <div class="nav"><a href="#"><i class="icon-user" style="color:#66B2FF;"></i><span ><strong> Thông tin</strong></span> </a>
+        </div><div class="nav"><a href="#"><i class="icon-doc-text-inv" style="color:#66B2FF;"></i><span><strong> Lý lịch</strong></span></a>
+        </div><div class="nav1"><img src="./images/ava.jpg" class="avata" width="30px" height="30px" alt="avata"><i class="icon-user andanh"></i>
+        </div><div class="nav"><a href="#"><i class="icon-mail-alt" style="color:#66B2FF;"></i><span ><strong> Chứng chỉ</strong></span></a>
+        </div><div class="nav"><a href="#"><i class="icon-star-1" style="color:#66B2FF;"></i><span><strong> Dự Án</strong></span> </a></div>
+      </nav>
+    </section>
+
+    <!-- Tạo mục tiêu nghề nghiệp và thông tin cá nhân.-->
+    <section id="about" class="row">
+        <div id="target" class="col-12 col-sm-6 col-lg-6">
+          <h1 class="section-title">Mục tiêu nghề nghiệp</h1>
+          <p> 
+             Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp của FUNiX.
+            Em mong muốn mình sẽ được làm việc với vị trí <b>Fullstack Developer</b>, 
+            có thể vận dụng những kiến thức đã được
+            trau dồi và không ngừng học hỏi để phát triển bản thân, cũng như
+            hoàn thành tốt nhất công việc được giao.
+          </p>
+        </div>
+        <div id="personal-info" class="col-12 col-sm-6 col-lg-6">
+          <h1 class="section-title" >
+            Thông tin cá nhân
+          </h1>
+          <ul class="info" style="list-style: none;">
+            <li><span><strong>Giới tính</strong></span> : Nam</li>
+            <li><span><strong>Ngày sinh</strong> </span> : 03/03/2000</li>
+            <li><span><strong>Điện thoại</strong> </span> : (+84) 869271933</li>
+            <li><span><strong>Email</strong> </span> : anhtvfx21071@funix.edu.vn</li>
+            <li><span><strong>Địa chỉ</strong></span> : Gò Dầu - Tây Ninh</li>
+            <li style="text-decoration: none;"><span><strong> Website</strong></span> : https://anhtv.vn</li><br>
+            <!-- Gọi các icon-->
+            <div class="icon-info1" style="color: #66B2FF;">
+              <i class="icon-twitter"> </i><i class="icon-facebook"></i>
+              <i class="icon-gplus"></i> <i class="icon-linkedin"></i>
+            </div>
+          </ul>
+          <div class="submit-email">
+            <input type="email" id="email">
+            <p class="error-email">Hãy nhập email để xác thực</p>
+            <button onclick="handleSubmit()" class="btn btn-primary">Submit</button>
+          </div>
+      </div>
+    </section>
+
+    <!--kinh nghiem, hoc van, ky nang, ngon ngu... -->
+    <section id="job-info" class="container sm">
+      <div class="chiasm row">
+       <!--Kinh nghiem-->
+      <div class="thongtin col-lg-4" onmouseover="handleOnMouseOver(this)" onmouseout="handleOnMouseOut(this)">
+          <div class="baoquat">
+          <div class="vitri1"><h2>Kinh nghiệm</h2></div>
+          <div class="vitri2"><i class="ic-toolbox"></i></div>
+          <div class="vitri3">
+            <h2 style="margin-left: -20px;"><label style="color: #66B2FF;">&bull;</label> Công ty Y</h2>
+            <p>
+               <em>05/2022 - </em><em style="border: 1 solid #66B2FF; border-radius: 6px; background-color: #66B2FF;">&ensp;Hiện tại&ensp;</em>
+              <br />
+              - Full Stack Developer. <br />
+              - Xây dựng, phát triển Website dựa trên thiết kế và yêu cầu đã có.
+              <br />
+              - Phân tích và thiết kế Database, sử dụng các hệ quản trị CSDL.
+              <br />
+            </p>
+            <br />
+            <h2 style="margin-left: -20px;"><label style="color: #66B2FF;">&bull;</label> Công ty B</h2>
+            <p>
+              <em>07/2021 - 03/2022</em> <br />- Web Designer. <br />- Thiết kế
+              Website dựa trên yêu cầu của khách hàng. <br />- Sử dụng các công
+              cụ: Figma, Canva, PTS
+            </p>
+          </div>
+          <!-- Tạo view more và view less-->  
+           <div class="view">
+            <button type="button" class="btn btn-warning rounded-pill viewmore" onclick="viewmore1(this)">&#9660; View More</button><br>
+            <button type="button" class="btn btn-warning rounded-pill viewless" onclick="viewless1(this)">&#9650; View Less</button>
+           </div>
+           </div>
+      </div>
+      <!--Ky nang-->
+      <div class="thongtin col-lg-4" onmouseover="handleOnMouseOver(this)" onmouseout="handleOnMouseOut(this)">
+      <div class="baoquat">
+       <div class="vitri1"><h2>Kỹ năng</h2></div>
+       <div class="vitri2"><i class="ic-tools-2"></i></div>
+       <div class="vitri3">
+         <p><strong>HTML/CSS: Fundamental</strong></p>
+         <span></span><span></span><span style="background: gray;"></span>
+         <p><strong>Javascrip: Intermediate</strong></p>
+         <span></span><span></span><span style="background: gray;"></span>
+         <p><strong>NodeJS: Intemediate</strong></p>
+         <span></span><span></span><span></span>
+         <p><strong>Bootstrap 5: Fudamental</strong></p>
+         <span></span><span style="background: gray;"></span><span style="background: gray;"></span>
+       </div>
+                 <!-- Tạo view more và view less-->  
+        <div class="view">
+         <button type="button" class="btn btn-warning rounded-pill viewmore" onclick="viewmore1(this)">&#9660; View More</button><br>
+         <button type="button" class="btn btn-warning rounded-pill viewless" onclick="viewless1(this)">&#9650; View Less</button>
+        </div>
+     </div>
+      </div>
+      <!--Ngon ngu-->
+      <div class="thongtin col-lg-4" onmouseover="handleOnMouseOver(this)" onmouseout="handleOnMouseOut(this)">
+        <div class="baoquat">
+        <div class="vitri1"><h2>Ngôn ngữ</h2></div>
+        <div class="vitri2"><i class="ic-mic"></i></div>
+        <div class="vitri3">
+          <p><strong>English-IELTS7.0</strong></p>
+          <span></span><span></span><span style="background: gray;"></span>
+          <p><strong>Japanese-N3</strong></p>
+          <span></span><span></span><span></span>
+        </div>
+          <!-- Tạo view more và view less-->  
+         <div class="view">
+          <button type="button" class="btn btn-warning rounded-pill viewmore" onclick="viewmore1(this)">&#9660; View More</button><br>
+          <button type="button" class="btn btn-warning rounded-pill viewless" onclick="viewless1(this)">&#9650; View Less</button>
+         </div>
+         </div>
+      </div>
+      </div>
+      <div class="chiasm row">
+      <!--Hoat dong-->
+      <div  class="thongtin col-lg-4" onmouseover="handleOnMouseOver(this)" onmouseout="handleOnMouseOut(this)">
+        <div class="baoquat">
+        <div class="vitri1" style="font-size:10px !important;"><h2>Hoạt động</h2></div>
+        <div class="vitri2"><i class="ic-toolbox" ></i></div>
+        <div class="vitri3">
+          <h2 style="margin-left: -20px;"><label style="color: #66B2FF;">&bull;</label> FPT Edu Hackathon2019</h2>
+          <p>
+            <em>03/2019 - 06/2019</em> <br />- Giải 3 bảng A. <br />- Đề tài:
+            Trang web về phân loại rác thải.
+          </p>
+          <br />
+          <h2 style="margin-left: -20px;"><label style="color: #66B2FF;">&bull;</label> Câu lạc bộ C</h2>
+          <p><em>08/2018 - 06/2021</em> <br />- Trưởng ban chuyên môn.</p>
+          <br />
+          <h2 style="margin-left: -20px;"><label style="color: #66B2FF;">&bull;</label> Câu lạc bộ N</h2>
+          <p>
+            <em>07/2020</em><br />- Hỗ trợ chức tuần lễ văn hóa Việt Nam -
+            Nhật Bản.
+          </p>
+        </div>
+        <!-- Tạo view more và view less-->  
+        <div class="view">
+          <button type="button" class="btn btn-warning rounded-pill viewmore" onclick="viewmore1(this)">&#9660; View More</button><br>
+          <button type="button" class="btn btn-warning rounded-pill viewless" onclick="viewless1(this)">&#9650; View Less</button>
+        </div>
+      </div>
+      </div>
+      <!--Hoc van-->
+        <div  class="thongtin col-lg-4" onmouseover="handleOnMouseOver(this)" onmouseout="handleOnMouseOut(this)">
+          <div class="baoquat">
+          <div class="vitri1"><h2>Học vấn</h2></div>
+          <div class="vitri2"><i class="ic-pencil"></i></div>
+          <div class="vitri3">
+            <h2 style="margin-left: -20px;"><label style="color: #66B2FF;">&bull;</label> FUNIX</h2>
+            <p>
+              <em>06/2021 - 05/2022</em> <br />- Tốt nghiệp chứng chỉ doanh
+              nghiệp nhánh Java. <br />- GPA:8/10
+            </p>
+            <br />
+            <h2 style="margin-left: -20px;"><label style="color: #66B2FF;">&bull;</label> Cử nhân - Đại học HUFI</h2>
+            <p>
+              <em>08/2018 - 04/2022</em> <br />- Chuyên ngành: Công nghệ kỹ
+              thuật điều khiển và tự động hóa.<br />- GPA: 3/4
+            </p>
+            <br />
+            <h2 style="margin-left: -20px;"><label style="color: #66B2FF;">&bull;</label> Đại học công nghệ</h2>
+            <p>
+              <em>08/2019 - 04/2022</em><br />- Hệ từ xa. <br />
+              - Chuyên ngành: Ngôn ngữ Nhật. <br />- GPA:2.7/4
+            </p>
+          </div>
+          <!-- Tạo view more và view less-->  
+          <div class="view">
+            <button type="button" class="btn btn-warning rounded-pill viewmore" onclick="viewmore1(this)">&#9660; View More</button><br>
+            <button type="button" class="btn btn-warning rounded-pill viewless" onclick="viewless1(this)">&#9650; View Less</button>
+           </div>
+          </div>
+        </div>
+      <!--So thich-->
+        <div  class="thongtin col-lg-4" onmouseover="handleOnMouseOver(this)" onmouseout="handleOnMouseOut(this)">
+          <div class="baoquat">
+          <div class="vitri1"><h2>Sở thích</h2></div>
+          <div class="vitri2"><i class="ic-telescope"></i></div>
+          <div class="vitri3 vitri3a">
+            <div class=" icon1">
+              <div class="icon2"><i style="padding: 15px 0px 0px 11px;" class="ic-megaphone icon3"></i></div>
+              <div class="icon2"><i style="padding: 15px 0px 0px 16px;"  class="ic-hotairballoon icon3"></i></div>
+              <div class="icon2"><i style="padding: 15px 0px 0px 17px;"  class="ic-strategy icon3"></i></div>
+              <div class="icon2"><i style="padding: 15px 0px 0px 12px;"  class="ic-basket icon3"></i></div>
+            </div>
+            <div class="icon1">
+              <p>Âm nhạc</p>
+              <p>Du lịch</p>
+              <p>Chơi game</p>
+              <p>Nấu ăn</p>
+            </div>
+          </div>
+         <!-- Tạo view more và view less-->  
+           <div class="view">
+            <button type="button" class="btn btn-warning rounded-pill viewmore" onclick="viewmore1(this)">&#9660; View More</button><br>
+            <button type="button" class="btn btn-warning rounded-pill viewless" onclick="viewless1(this)">&#9650; View Less</button>
+           </div>
+           </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Tạo chứng chỉ, giải thưởng-->
+    <section id="certificate">
+      <div class="container">
+        <h1 class="section-title">Chứng chỉ - Giải thưởng</h1><br><br>
+        <div class="chung_chi row row-cols-1 row-cols-sm-2 row-cols-lg-4">
+          <div class="order-sm-1 order-lg-1 hinh11">
+            <img src="images/Cert_DBI.png" alt="Chunng chi DBI" class="img-fluid"/>
+          </div>
+         
+          <div class="order-sm-3 order-lg-2 noidung noidung12">
+            <h3>CHỨNG CHỈ LẬP TRÌNH WEB-FUNIX</h3>
+            <p>- Chứng chỉ thuộc chương trình CCDN <br />- GPA: 8.6</p>
+          </div>
+         
+          <div class="order-sm-2 order-lg-3 kedoc kedoc1 hinh11">
+            <img src="images/Cert_PRF.png" alt="Chung chi PRF" class="img-fluid"/>
+          </div>
+         
+          <div class="order-sm-4 order-lg-4 noidung noidung12 kedoc1">
+            <h3>CHỨNG CHỈ JAVASCRIP-FUNIX</h3>
+            <p>- Chứng chỉ thuộc chương tình CCDN <br />- GPA: 8.9</p>
+          </div>
+        </div>
+        <!--khoang trong-->
+        <div class="andanh2 chung_chi row">
+          <div class="w-100 kengang kengang1"></div>
+          <div class="w-100 kengang1"></div>
+        </div>
+        <!--v-->
+        <div class="chung_chi row row-cols-1 row-cols-sm-2 row-cols-lg-4">
+          <div class="order-sm-1 order-lg-1 hinh11">
+            <img src="images/Cert_WEB.png" alt="Chung chi WEB" class="img-fluid" />
+          </div>
+          <div class="order-sm-3 order-lg-2 noidung">
+            <h3>CHỨNG CHỈ THIẾT KẾ DATABASE-FUNIX</h3>
+            <p>
+              - Chứng chỉ thuộc chương trình con CCDN <br />
+              - GPA: 8.0
+            </p>
+          </div>
+          <div class="order-sm-2 andanh1 andanh2"></div>
+          <div class="order-sm-4 andanh1 andanh2"></div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!--Tạo thông tin dự án-->
+    <section id="project">
+      <div class="container"> 
+        <h1 class="section-title">Dự án</h1><br><br>
+        <div class="du_an row">
+          <div class="col-12 col-sm-4 col-lg-4 info_duan1">
+            <img src="images/project_1.png" alt="dự án 1" width="100%"/>
+            <div class="ten_du_ana"><a href="digital_CV.html" style="text-decoration: none;color:black;"><span><strong>&emsp;&ensp;CV CÁ NHÂN</strong></span></a></div>
+            <div class="du_an_laptop"><span class="ten_du_anb">&ensp;2021&ensp;</span>
+              <span>&emsp;<i class="icon-user-1"></i>&ensp;FUNIX&emsp;<i class="icon-lamp"></i>&ensp;Developer</span></div>
+            <table class="du_an_tablet">
+              <tr>
+                <td style="width: 35%; padding-top: 5px;">&ensp;<span class="ten_du_anb">&ensp;2021&ensp;</span></td>
+                <td style="width: 65%;"><span><i class="icon-user-1"></i>&ensp;FUNIX</span></td>
+              </tr>
+              <tr>
+                <td style="width: 35%;"></td>
+                <td style="width: 65%; padding-bottom: 5px;"><span><i class="icon-lamp"></i>&ensp;Developer</span></td>
+              </tr>
+            </table>
+            <table class="du_an_mobile">
+              <tr>
+                <td style="padding-top: 5px;">&emsp;<span class="ten_du_anb">&ensp;2021&ensp;</span></td>
+              </tr>
+              <tr>
+                <td>&emsp;<span><i class="icon-user-1"></i>&ensp;FUNIX</span></td>
+              </tr>
+              <tr>
+                <td>&emsp;<span><i class="icon-lamp"></i>&ensp;Developer</span></td>
+              </tr>
+            </table>
+            <table class="mota">
+              <tr class="kengang_da">
+                <td style="width: 27%;">Mô tả</td>
+                <td style="width: 73%">Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng như kỹ năng nghề nghiệp.</td>
+              </tr>
+              <tr class="kengang_da">
+                <td>Nhiệm vụ</td>
+                <td>- Phát triển code <br>- Review code <br>- Tối ưu code <br>- Xử lý lỗi
+                </td>
+              </tr>
+              <tr>
+                <td>Công nghệ</td>
+                <td>- HTML, CSS</td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-12 col-sm-4 col-lg-4 info_duan2">
+            <img src="images/project_2.png" alt="dự án 2" width="100%" />
+            <div class="ten_du_ana"><a href="digital_CV.html" style="text-decoration: none;color:black;"><span><strong>&emsp;&ensp;TRANG WEB QUẢN LÝ THÚ CƯNG</strong></span></a></div>
+            <div class="du_an_laptop"><span class="ten_du_anb">&ensp;2021&ensp;</span>
+              <span>&emsp;<i class="icon-user-1"></i>&ensp;FUNIX&emsp;<i class="icon-lamp"></i>&ensp;Developer</span></div>
+            <table class="du_an_tablet">
+              <tr>
+                <td style="width: 35%;padding-top: 5px;">&ensp;<span class="ten_du_anb">&ensp;2021&ensp;</span></td>
+                <td style="width: 65%;"><span><i class="icon-user-1"></i>&ensp;FUNIX</span></td>
+              </tr>
+              <tr>
+                <td style="width: 35%;"></td>
+                <td style="width: 65%; padding-bottom: 5px;"><span><i class="icon-lamp"></i>&ensp;Developer</span></td>
+              </tr>
+            </table>
+            <table class="du_an_mobile">
+              <tr>
+                <td style="padding-top: 5px;">&emsp;<span class="ten_du_anb">&ensp;2021&ensp;</span></td>
+              </tr>
+              <tr>
+                <td>&emsp;<span><i class="icon-user-1"></i>&ensp;FUNIX</span></td>
+              </tr>
+              <tr>
+                <td>&emsp;<span><i class="icon-lamp"></i>&ensp;Developer</span></td>
+              </tr>
+            </table>
+            <table class="mota">
+              <tr class="kengang_da">
+                <td style="width: 27%;">Mô tả</td>
+                <td style="width: 73%;">Ứng dụng giúp quản lý các thông tin của thú cưng như: cân nặng, giống
+                  , tình trạng tiêm chủng,.. Bao gồm các chức năng thêm / xửa/ xóa.
+                </td>
+              </tr>
+              <tr class="kengang_da">
+                <td>Nhiệm vụ</td>
+                <td>- Phát triển code <br>- Review code <br>- Tối ưu code <br>- Xử lý lỗi</td>
+              </tr>
+              <tr>
+                <td>Công nghệ</td>
+                <td>- HTML, CSS</td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-12 col-sm-4 col-lg-4 info_duan3">
+            <img src="images/project_3.png" alt="dự án 3" width="100%"  />
+            <div class="ten_du_ana"><a href="digital_CV.html" style="text-decoration: none;color:black;"><span><strong>&emsp;&ensp;TRANG WEB XEM TIN TỨC</strong></span></a></div>
+            <div class="du_an_laptop"><span class="ten_du_anb">&ensp;2021&ensp;</span>
+              <span>&emsp;<i class="icon-user-1"></i>&ensp;FUNIX&emsp;<i class="icon-lamp"></i>&ensp;Developer</span></div>
+            <table class="du_an_tablet">
+              <tr>
+                <td style="width: 35%;padding-top: 5px;">&ensp;<span class="ten_du_anb">&ensp;2021&ensp;</span></td>
+                <td style="width: 65%;"><span><i class="icon-user-1"></i>&ensp;FUNIX</span></td>
+              </tr>
+              <tr>
+                <td style="width: 35%;"></td>
+                <td style="width: 65%; padding-bottom: 5px;"><span><i class="icon-lamp"></i>&ensp;Developer</span></td>
+              </tr>
+            </table>
+            <table class="du_an_mobile">
+              <tr>
+                <td style="padding-top: 5px;">&emsp;<span class="ten_du_anb">&ensp;2021&ensp;</span></td>
+              </tr>
+              <tr>
+                <td>&emsp;<span><i class="icon-user-1"></i>&ensp;FUNIX</span></td>
+              </tr>
+              <tr>
+                <td>&emsp;<span><i class="icon-lamp"></i>&ensp;Developer</span></td>
+              </tr>
+            </table>
+            <table class="mota">
+              <tr class="kengang_da">
+                <td style="width: 27%;">Mô tả</td>
+                <td style="width: 73%;">Trang Web xem tin tức từ nhiều nguồn khác nhau, người dùng có thể tìm kiếm các tin tức dựa theo từ khóa.</td>
+              </tr>
+              <tr class="kengang_da">
+                <td>Nhiệm vụ</td>
+                <td>- Phát triển code <br>- Review code <br>- Tối ưu code <br>- Xử lý lỗi</td>
+              </tr>
+              <tr>
+                <td>Công nghệ</td>
+                <td>- HTML, CSS</td>
+              </tr>
+            </table>
+          </div>
+          
+     
+        </div>
+      </div>
+    </section>
+
+    <!--Tạo footer dùng display:inline-block để đưa lên cùng 1 hàng-->
+    <section id="footer">
+      <div>
+        <ul  style="list-style: none;">
+          <li class="mxh">
+            <div><i class="icon-facebook-circled"></i> Facebook</div>
+          </li>
+          <li class="mxh">
+            <div><i class="icon-linkedin-circled"></i> Linkedin</div>
+          </li>
+          <li class="mxh">
+            <div><i class="icon-github-circled"></i> Github</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

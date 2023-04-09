@@ -1,0 +1,229 @@
+@media only screen and (min-width: 576px) and (max-width: 991px){
+    /*banner*/
+    #banner{
+      margin: 0px 10px;
+    }
+    .img-banner{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      background-image: linear-gradient(black,black);
+    }  
+    .text-banner {
+      position: absolute;
+      left: 50%;
+      top: 13px;
+      color: white;
+      text-align: center;
+      transform: translate(-50%, 0);
+    }
+    /*nav-bar*/
+    #nav-bar{
+      text-align: center;
+      margin: -1px;
+    }
+    #nav-bar .container .nav{
+      display: inline-block;
+      width: 20%;
+      height: 50px;
+      text-transform: uppercase;
+      padding-top: 9px; 
+      border: 1px solid #e0e0e0;
+      font-size: 12px;
+    }
+    #nav-bar .container .nav1{
+      display: inline-block;
+      width: 40px;
+      height: 50px;
+      padding-top: 9px; 
+      
+    }
+    #nav-bar .container .nav a{
+      text-decoration: none; 
+      color: black;
+    }
+    #nav-bar .container .nav1 .avata{
+      display: none;
+    }
+    .andanh{
+      color: white;
+    }
+    /*muc tieu - thong tin*/
+    #about{
+      margin: 0px 10px;
+    }
+    #target{
+      padding: 60px 30px 50px 50px;
+      background-color: #e0e0e0;
+    }
+    #personal-info{
+      padding: 60px 30px 50px 50px;
+      background-color: #c0c0c0;
+    }
+    #personal-info .info{
+      margin-left: -30px;
+      display: none;
+   }
+    /*kinh nghiem, ky nang, ngon ngu ..*/
+    #job-info{
+      width: 100%;
+      padding: 50px 7%;  
+   }
+   .baoquat{
+      border: 1px solid #e0e0e0;
+      margin: 10px 0px;
+   }
+   .sm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
+   }
+   .chiasm{
+    align-content: flex-start;
+   }
+   .vitri1{
+      display: inline-block;
+      width: 70%;
+      padding:20px 0px 40px 10px;
+    }
+   .vitri2{
+      display: inline-block;
+      width: 25%;
+      font-size: 32px;
+    }
+  
+   .vitri3{
+      padding: 10px 10px 10px 40px;
+      display: none;
+   }
+   .vitri3a{
+      padding: 10px 10px 10px 10px !important;
+      display: none;
+   }
+   .icon1{
+      display:flex;
+      justify-content:space-evenly;
+    }
+    .icon2{
+     display: flex;
+     width: 50px;
+     height: 50px;
+     color: #66B2FF;
+     border: 1px solid #66B2FF;
+     border-radius: 50%;
+    }
+    .icon3{
+      font-size: 20px;
+    }
+    .vitri3 span{
+      background: #199cdb;
+      display: inline-block;
+      height:2px;
+      margin-right: 10px;
+      width: 45px;
+    }
+   .view .viewless{
+      margin:20px 20px 20px 20px;
+      display: none;
+   }
+   .view .viewmore{
+      margin: 20px 20px 20px 20px;
+      display: none;
+   }
+   /*giai thuong*/
+   #certificate{
+      margin:0px 10px;
+      background-color: #f7f7f7;
+      padding: 40px 7%;
+   }
+   .kedoc , .kedoc1{
+    border-left: 1px solid  #d6c08d;
+ }
+   .chung_chi .kengang{
+    height: 30px;
+    border-bottom: 1px solid #d6c08d;
+  }
+   .chung_chi .kengang1{
+    height:40px;
+   }
+   .noidung{
+    padding-top: 15px;
+   }
+   /*Du an*/
+   #project{
+    padding:40px 7%  40px 11%;
+  }
+  #project .container h1{
+  margin-left: -30px;
+  }
+  #project .container .du_an .info_duan1{
+    padding:0px;
+    margin-left: -2%;
+    border: 1px solid #e0e0e0;
+  }
+  #project .container .du_an .info_duan2{
+    padding:0px;
+    margin-left: 1%;
+    border: 1px solid #e0e0e0;
+  }
+  #project .container .du_an .info_duan3{
+    padding:0px;
+    margin-left: 1%;
+    border: 1px solid #e0e0e0;
+  }
+  .ten_du_ana{
+  border-bottom: 1px solid #e0e0e0;
+  padding: 3px;
+  }
+  .du_an_tablet{
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 3px;
+  }
+  .du_an_laptop, .du_an_mobile{
+  display: none;
+  }
+  .ten_du_anb{
+  border: 1px solid #66B2FF; 
+  border-radius: 12px; 
+  background-color:#66B2FF
+  }
+  .mota tr td{
+    padding: 2%;
+    vertical-align: top;
+  }
+  .kengang_da{
+    border-bottom: 1px solid #e0e0e0 !important;
+  }
+    /*footer*/
+    #footer{
+      margin: 10px 10px 1px 10px;
+      background-color: #f7f7f7;
+      text-align: center;
+      height:60px;
+   }
+    .mxh{
+      display: inline-block;
+      color: #66B2FF;
+      height: 70px;
+      margin: 0px 15px;
+      font-size: 110%;
+      padding-top: 15px;
+    }
+  /*Dinh dang kich thuoc*/
+  h2{
+    font-size: 22px !important;
+  }
+  h1{
+    font-size: 30px !important;
+    padding: 20px 0px;
+  }
+  h3{
+    font-size: 17px !important;
+  }
+  p, table, span{
+    font-size: 13px !important;
+  }
+
+  }

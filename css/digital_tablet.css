@@ -1,0 +1,48 @@
+@media only screen and (max-width: 991px) and (min-width:576px){
+  .gigital{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 20px;
+    }
+    .baoquat{
+     border: 10px solid blue;
+     padding: 20px 5px 20px 20px;
+     background-color: #99CCFF;
+     margin-top: -10px;
+    }
+   .chamcham{
+     border-bottom: 1px dashed #66b2ff ;
+   }
+   .item1{
+     order:1;
+   }
+   .item2{
+     order:3;
+   }
+   .item3{
+     order:5;
+   }
+   .item4{
+     order:2;
+   }
+   .item5{
+     order:4;
+   }
+    .icon{
+     font-size: 180%;
+     text-align: center;
+    }
+    .icon1{
+      color: #9933ff;
+     }
+    h1{
+     font-size:26px;
+     border-bottom: 1px solid #e0e0e0;
+     padding-bottom: 5px;
+    }
+    h2{
+     font-size: 20px;
+    }
+
+}
